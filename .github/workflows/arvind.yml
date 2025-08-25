@@ -10,7 +10,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Wellcome
-        run: echo "Hello from Windows runner"
+        run: echo Hello from Windows runner
         
           
   
