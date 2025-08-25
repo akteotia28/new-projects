@@ -1,18 +1,17 @@
-name = " My fist Github action file "
+name: My first Github action file
 on:
   push:
     branches:
-      - 'main'
+      -  main
       - 'feature/**'
 jobs:
   my_first_job:
     name: first name
-    runs-on: india runner
+    runs-on: self-hosted
       
     steps:
       - name: Wellcome
-        run: Echo Arvind Kumar
-         - name: Wellcome again
-        run: Echo hello sir
+        run: echo "Hello from Windows runner"
+        
           
   
