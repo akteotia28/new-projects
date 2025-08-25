@@ -1,12 +1,25 @@
-name: My first workflow
+name: Debug self-hosted runner
+
 on:
-   push:
-    branches:
-    - 'main'
-    - 'features/**'
-    
-    
-jobs: 
- this is my first job
- name: my first job
- runs-on:
+  workflow_dispatch  # manually trigger from Actions tab
+
+jobs:
+  test:
+    runs-on: self-hosted
+    steps:
+      - name: Check who is running
+        run: whoami
+
+      - name: Show current directory
+        run: pwd
+
+      - name: List files
+        run: dir
+
+      - name: Echo test in PowerShell
+        run: echo "Hello from PowerShell"
+
+      - name: Echo test in CMD
+        run: echo Hello from CMD
+        shell: cmd
+
