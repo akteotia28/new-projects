@@ -9,7 +9,7 @@ on:
 jobs:
   my_first_job:
     name: My first job
-    runs-on: self-hosted
+    runs-on: windows-latest
     steps:
       - name: Print a greeting
         env:
@@ -19,6 +19,6 @@ jobs:
           LAST_NAME: Octocat
         run: |
           echo %MY_VAR% %FIRST_NAME% %MIDDLE_NAME% %LAST_NAME%.
-        shell: cmd
+        
         
 
