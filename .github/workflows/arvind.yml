@@ -2,8 +2,9 @@ name: My first Github action file
 on:
   push:
     branches:
-      -  main
+      - main
       - 'feature/**'
+
 jobs:
   my_first_job:
     name: My first job
@@ -11,6 +12,10 @@ jobs:
     steps:
       - name: Wellcome
         run: echo Hello from Windows runner
+
+
+
+
         
           
   
