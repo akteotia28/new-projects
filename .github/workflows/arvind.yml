@@ -8,7 +8,6 @@ jobs:
   my_first_job:
     name: first name
     runs-on: self-hosted
-      
     steps:
       - name: Wellcome
         run: echo "Hello from Windows runner"
