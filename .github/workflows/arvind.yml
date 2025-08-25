@@ -10,9 +10,7 @@ jobs:
     name: My first job
     runs-on: self-hosted
     steps:
-      - name: Wellcome
-        run: echo "Hello from Windows runner"
-
+      
       - name: Wellcome CMD
         run: echo Hello from CMD
         shell: cmd
