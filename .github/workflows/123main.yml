@@ -4,15 +4,11 @@ on:
   push:
     branches:
       - main
-      - 'features'   # aapne 'featuers' likha tha, galat spelling thi
+      - 'features'  
 
 jobs:
   my_first_job:
     name: My first job
-    runs-on: self-hosted
-
-  my_second_job:
-    name: My second job
     runs-on: self-hosted
     steps:
       - name: jai hunuman
