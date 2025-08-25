@@ -11,5 +11,5 @@ jobs:
     name: My first job
     runs-on: self-hosted
     steps:
-      - name: jai hunuman
-        run: echo "jai shree ram"
+      - name: 'jai hunuman'
+        run: echo jai shree ram
