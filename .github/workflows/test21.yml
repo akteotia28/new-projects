@@ -1,0 +1,22 @@
+name: Test workflow
+on: 
+    push:
+     branches:
+      - main
+      - 'features/**'
+    jobs:
+          my_first_job:
+          name: My first job
+          my_second_job:
+          name: My second job  
+          runs-on: self hosted
+
+    steps:
+      - name: Print a greeting
+        env:
+          MY_VAR: Hi there! My name is
+          FIRST_NAME: Mona
+          MIDDLE_NAME: The
+          LAST_NAME: Octocat
+        run: |
+          echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
