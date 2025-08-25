@@ -2,6 +2,7 @@ name: My first Github action file
 on:
   push:
     branches:
+    
       - main
       - 'feature/**'
 
