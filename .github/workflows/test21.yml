@@ -8,7 +8,7 @@ on:
 
 jobs:
   my_first_job:
-    name: My first job
+    name: phela job
     runs-on: windows-latest
     steps:
       - name: Print a greeting
