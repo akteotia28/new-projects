@@ -1,0 +1,9 @@
+name = " My fist Github action file "
+on:
+  push:
+    branches:
+      - 'main'
+      - 'feature/**'
+      
+ 
+  
