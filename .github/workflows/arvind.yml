@@ -7,8 +7,11 @@ on:
 jobs:
   my_first_job:
     name: first name
-    runs-on:
+    runs-on: india runner
   my_second_job:
     name: second name      
-    
+    steps:
+      - name: Wellcome
+        run: Echo Arvind Kumar
+          
   
