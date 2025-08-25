@@ -6,7 +6,7 @@ on:
       - 'feature/**'
 jobs:
   my_first_job:
-    name: first name
+    name: My first job
     runs-on: self-hosted
     steps:
       - name: Wellcome
